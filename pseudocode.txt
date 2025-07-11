@@ -1,0 +1,21 @@
+START
+    PROMPT user to enter student score
+    CONVERT score to integer
+
+    IF score >= 70 AND score <= 100
+        grade = 'A'
+    ELSE IF score >= 60 AND score <= 69
+        grade = 'B'
+    ELSE IF score >= 50 AND score <= 59
+        grade = 'C'
+    ELSE IF score >= 45 AND score <= 49
+        grade = 'D'
+    ELSE IF score >= 40 AND score <= 44
+        grade = 'E'
+    ELSE IF score < 40 AND score >= 0
+        grade = 'F'
+    ELSE
+        grade = 'Invalid score'
+
+    DISPLAY grade
+END
